@@ -12,7 +12,7 @@
     <main>
         <div class="container">
             <div class="greeting">
-                <img class="image logo" src="assets/img/SEGA_logo.svg.png" alt="">
+                <img loading="lazy" class="image logo" src="assets/img/SEGA_logo.svg.png" alt="">
                 <h1>История игровых консолей Sega</h1>
                 <button class="btn" onclick="window.location.href='#contents'">Перейти к оглавлению</button>
             </div>
@@ -22,7 +22,7 @@
             <div>
                 <ul>
                     <li>Sega Master System</li>
-                    <li>Sega Mega Drive (Sega Genesis)</li>
+                    <li>Sega Mega Drive / Sega Genesis</li>
                     <li>Sega Saturn</li>
                     <li>Sega Dreamcast</li>
                 </ul>
@@ -31,27 +31,159 @@
         <div class="container">
             <article>
                 <h2 class="article-header">
-                    SG-1000 и SG-3000
+                    Предисловие
+                </h2>
+                <p class="section-paraghraph">
+                    Компания Sega имеет долгую историю, берущую свое начало еще в 40-ых годах предыдущего столетия.
+                    Изначально она выпускала азартные игровые автоматы для армии США. Далее шли музыкальные автоматы,
+                    фотоавтоматы, электромеханические игры. Но в данный момент я хочу сконцентрироваться на том этапе ее
+                    существования, когда она производила домашние игровые консоли, и даже в некоторые моменты была
+                    лидером этого рынка.
+                </p>
+            </article>
+            <article>
+                <h2 id="arcades" class="article-header">
+                    Аркадки
                 </h2>
                 <section class="article-section">
                     <h3 class="section-header">
-                        Выпуск
+                        Первый хит
                     </h3>
                     <div class="article-section-block">
                         <p class="section-paraghraph">
-                            Первыми системами Sega, которые покупатели могли принести домой, были эксклюзивная для
-                            Японии SG-1000 и ее компьютерный аналог SG-3000, дебютировавшие в июле 1983 года. К
-                            сожалению для Sega, эти системы вышли в тот же день, что и Nintendo Famicom, она же Nintendo
-                            Entertainment System (NES) в Америке или Dendy у нас. Результатом стало то, что хоть и
-                            аркадные автоматы Sega, такие как Galaga и Space Invaders, пользовались популяность, но
-                            главной ДОМАШНЕЙ игровой консолью, ака приставкой, этого поколения заслуженно стала NES.
+                            В 1981-ом году Sega выпустила гоночный автомат "Turbo". До появления этой игры гонки
+                            выглядели плоско (как в игре «Monaco GP») и использовали перспективу сверху. В автомате
+                            «Turbo» впервые была использована идея горизонтальной перспективы. Разработчики создали в
+                            игре простой эффект масштабирования: объекты, располагающиеся по краям трассы, становились
+                            крупнее, когда машина проезжала мимо них. Эту инновацию другие компании начали повторять и
+                            дорабатывать.
                         </p>
                         <div class="section-image-wrapper">
-                            <img class="section-image" src="assets/img/SG1000/SG1000.jpg" alt="Sega Master System">
-                            SG-1000
+                            <div class="images-container">
+                                <button class="img-btn goBackBtn">
+                                </button>
+                                <div class="images" data-selected-img="0">
+                                    <div class="img-wrapper">
+                                        <img class="img" src="assets/img/Arcades/image00011.jpg" alt="">
+                                        <span class="img-desc">
+                                            Monaco GP (Кабинет)
+                                        </span>
+                                    </div>
+                                    <div class="img-wrapper">
+                                        <img class="img" src="assets/img/Arcades/image00091.jpg" alt="">
+                                        <span class="img-desc">
+                                            Monaco GP (Экран)
+                                        </span>
+                                    </div>
+                                    <div class="img-wrapper">
+                                        <img class="img" src="assets/img/Arcades/image00098.jpg" alt="">
+                                        <span class="img-desc">
+                                            Turbo (Кабинет)
+                                        </span>
+                                    </div>
+                                    <div class="img-wrapper">
+                                        <img class="img" src="assets/img/Arcades/image00041.png" alt="">
+                                        <span class="img-desc">
+                                            Turbo (Экран)
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="img-btn goNextBtn">
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </section>
+                <section class="article-section">
+                    <h3 class="section-header">
+                        80-ые годы
+                    </h3>
+                    <div class="article-section-block">
+                        <div>
+                            <p class="section-paraghraph">
+                                80-е годы стали для компании Sega поистине золотыми и сделали её лидером среди
+                                производителей аркадных видеоигр. С появлением первых персональных компьютеров многие
+                                компании стали создавать домашние игровые приставки дабы привлечь больше покупателей, и
+                                SEGA
+                                старалась от них не отставать.
+                            </p>
+                            <p class="section-paraghraph">
+                                В 1982 году появляется сразу два потенциальных хита:
+                            </p>
+                            <p class="section-paragraph">
+                                1. Игра «Zaxxon», которая неплохо выглядит и по сей день.
+                                Разработчики, за счет угла обзора,
+                                создали эффект трехмерности, движения фона и использования нескольких слоев изображений.
+                            </p>
+                            <p class="section-paragraph">
+                                2. «Buck Rogers Planet of Zoom». В ней трехмерный эффект
+                                достигался за счет увеличения
+                                масштаба приближающихся объектов и противников, плюс космический корабль отбрасывал
+                                тень.
+                            </p>
+                        </div>
+                        <div class="section-image-wrapper">
+                            <div class="images-container">
+                                <button class="img-btn goBackBtn">
+                                </button>
+                                <div class="images" data-selected-img="0">
+                                    <div class="img-wrapper">
+                                        <img class="img" src="assets/img/Arcades/image00083.jpg" alt="">
+                                        <span class="img-desc">
+                                            Zaxxon
+                                        </span>
+                                    </div>
+                                    <div class="img-wrapper">
+                                        <img class="img" src="assets/img/Arcades/brpz.jpg" alt="">
+                                        <span class="img-desc">
+                                            Buck Rogers Planet of Zoom
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="img-btn goNextBtn">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article>
+                <h2 class="article-header">
+                    SG-1000 и SG-3000
+                </h2>
+
+                <div class="article-section-block">
+                    <p class="section-paraghraph">
+                        Первыми системами Sega, которые покупатели могли принести домой, были эксклюзивная для
+                        Японии SG-1000 и ее компьютерный аналог SG-3000, дебютировавшие в июле 1983 года. К
+                        сожалению для Sega, эти системы вышли в тот же день, что и Nintendo Famicom, она же Nintendo
+                        Entertainment System (NES) в Америке или Dendy у нас. Результатом стало то, что хоть и
+                        аркадные автоматы Sega, такие как Turbo и Zaxxon, пользовались популяностью, но
+                        главной ДОМАШНЕЙ игровой консолью, ака приставкой, этого поколения заслуженно стала NES.
+                    </p>
+                    <div class="section-image-wrapper">
+                        <div class="images-container">
+                            <button class="img-btn goBackBtn">
+                            </button>
+                            <div class="images" data-selected-img="0">
+                                <div class="img-wrapper">
+                                    <img class="img" src="assets/img/SG1000/SG1000.jpg" alt="">
+                                    <span class="img-desc">
+                                        SG-1000
+                                    </span>
+                                </div>
+                                <div class="img-wrapper">
+                                    <img class="img" src="assets/img/SG1000/image00063.jpeg" alt="">
+                                    <span class="img-desc">
+                                        SG-1000 Mark II
+                                    </span>
+                                </div>
+                            </div>
+                            <button class="img-btn goNextBtn">
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </article>
             <article>
                 <h2 class="article-header">Sega Master System</h2>
@@ -60,38 +192,220 @@
                     <div class="article-section-block">
                         <p class="section-paraghraph">
                             Sega дебютировала в Северной Америке в 1986 году с Sega Master System, выпущенной в Японии
-                            как Sega Mark III в октябре 1985 года. Sega Master System представила несколько классических игр
-                            и имела превосходящее NES аппаратное обеспечение, но чего-то не хватало. У Nintendo был набор
-                            узнаваемых персонажей и эксклюзивные контракты с ведущими разработчиками игр, поэтому
+                            как Sega Mark III в октябре 1985 года. Sega Master System представила несколько классических
+                            игр и имела превосходящее NES аппаратное обеспечение, но чего-то не хватало. У Nintendo был
+                            набор узнаваемых персонажей и эксклюзивные контракты с ведущими разработчиками игр, поэтому
                             команде Sega пришлось вернуться к чертежной доске.
                         </p>
                         <div class="section-image-wrapper">
-                            <img class="section-image" src="assets/img/MasterSystem/MasterSystem1.webp"
+                            <img loading="lazy" class="section-image" src="assets/img/MasterSystem/MasterSystem1.webp"
                                 alt="Sega Master System">
                             Sega Master System
+                        </div>
+                    </div>
+                </section>
+                <section class="article-section">
+                    <h3 class="section-header">
+                        3D в 80-ых!!!
+                    </h3>
+                    <div class="article-section-block">
+                        <p class="section-paraghraph">
+                            1987-й год – компания Sega удивляет всех 3D-очками, которые позволяли увидеть полноцветные
+                            3D-изображения на экране телевизора. На выставке «Consumer Electronics Show» зрители были
+                            заворожены объемными эффектами. Для того времени это было просто невероятно! Но когда
+                            инновационный аксессуар поступил в продажу, его почти никто не стал покупать. Дело было в
+                            непомерно высокой цене и совместимости лишь с небольшим набором игр.
+                        </p>
+                        <div class="section-image-wrapper">
+                            <img loading="lazy" class="section-image" src="assets/img/MasterSystem/image00097.jpg"
+                                alt="SG-1000">
+                            The Sega 3-D Glasses
                         </div>
                     </div>
                 </section>
             </article>
             <article>
                 <h2 class="article-header">
+                    Sega Mega Drive / Sega Genesis
                 </h2>
                 <section class="article-section">
                     <h3 class="section-header">
+                        Выпуск
+                    </h3>
+                    <div class="article-section-block">
+                        <div>
+                            <p class="section-paraghraph">
+                                Следующая попытка консоли Sega добиться мирового успеха пришлась на Sega Genesis 1989
+                                года, самую мощную систему компании на тот момент. Genesis отличалась четкой 16-битной
+                                графикой с прекрасной цветопередачей.
+                            </p>
+                            <p class="section-paraghraph">
+                                Несмотря на свои великолепные характеристики, международная аудитория неохотно покупала
+                                Sega Genesis, когда она появилась в Северной Америке. Попытки стимулировать продажи с
+                                помощью креативных лозунгов вроде «Genesis do, what Nintendon’t» и
+                                привязанностей к таким известным именам, как Джо Монтана и Майкл Джексон, смогли
+                                заработать только 500.000 продаж Genesis в США.
+                            </p>
+                        </div>
+                        <div class="section-image-wrapper">
+                            <div class="images-container">
+                                <button class="img-btn goBackBtn">
+                                </button>
+                                <div class="images" data-selected-img="0">
+                                    <div class="img-wrapper">
+                                        <img class="img"
+                                            src="assets/img/MegaDrive/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg"
+                                            alt="Sega Mega Drive">
+                                        <span class="img-desc">
+                                            Sega Mega Drive
+                                        </span>
+                                    </div>
+                                    <div class="img-wrapper">
+                                        <img class="img" src="assets/img/MegaDrive/MegaDrive.jpg"
+                                            alt="Sega Mega Drive 2">
+                                        <span class="img-desc">
+                                            Sega Mega Drive 2 / Sega Genesis
+                                        </span>
+                                    </div>
+                                </div>
+                                <button class="img-btn goNextBtn">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="article-section">
+                    <h3 class="section-header">
+                        Появление маскота
+                    </h3>
+                    <div class="article-section-block">
+                        <div>
+                            <p class="section-paraghraph">
+                                Сега нуждалась в талисмане, который бы демонстрировал мощь 16-битной системы, и «Sonic
+                                The Hedgehog» отлично справился с этой ролью. Исходя из сильных сторон Mega Drive,
+                                разработчики сделали анимацию персонажа максимально быстрой, а также насытили игру
+                                красочной графикой.
+                            </p>
+                        </div>
+                        <div class="section-image-wrapper">
+                            <img loading="lazy" class="section-image" src="assets/img/MegaDrive/sonic.jpg" alt="Sonic">
+                            Соник
+                        </div>
+                    </div>
+                </section>
+                <section class="article-section">
+                    <h3 class="section-header">
+                        32x и Sega-CD / Бутерброд
+                    </h3>
+                    <div class="article-section-block">
+                        <div>
+                            <p class="section-paraghraph">
+                                1991 год — Sega выпускает Sega Mega CD. Это новое, инновационное устройство, идущее в
+                                дополнение к игровой приставке Mega Drive. Sega CD не нашла массового отклика у
+                                геймеров. Проблема была та же, как и с 3D очками – слишком высокая цена и слишком
+                                маленький выбор игр.
+                            </p>
+                            <p class="section-paraghraph">
+                                1994 год - вышло еще одно дополнение к Mega Drive - Sega 32X, но большинство фанатов
+                                копили на новую полноценную 32-битную приставку, которая уже была анонсирована.
+                            </p>
+                        </div>
+                        <div class="section-image-wrapper">
+                            <img loading="lazy" class="section-image" src="assets/img/MegaDrive/image00021.jpg"
+                                alt="Sonic">
+                            32x + Sega-CD
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article>
+                <h2 class="article-header">
+                    Game Gear
+                </h2>
+                <section class="article-section">
+                    <h3 class="section-header">
+                        Выпуск
                     </h3>
                     <div class="article-section-block">
                         <p class="section-paraghraph">
-
+                            Портативная консоль Sega Game Gear появилась в продаже в октябре 1990 года в Японии и в
+                            апреле 1991 года в Северной Америке. Game Boy от Nintendo выиграл эту битву, но Game Gear
+                            выделяется как уникальный момент в истории портативных игр.
                         </p>
                         <div class="section-image-wrapper">
-                            <img class="section-image" src="assets/img/MasterSystem/MasterSystem1.webp"
-                                alt="Sega Master System">
+                            <img loading="lazy" class="section-image" src="assets/img/GameGear/GameGear.png"
+                                alt="Game Gear">
+                            GameGear
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article>
+                <h2 class="article-header">
+                    Sega Saturn
+                </h2>
+                <section class="article-section">
+                    <h3 class="section-header">
+                        Выпуск
+                    </h3>
+                    <div class="article-section-block">
+                        <div>
+                            <p class="section-paraghraph">
+                                К середине 1990-х качество видеоигр быстро улучшилось, и Sega пришлось конкурировать с
+                                32-битными гигантами, такими как Nintendo 64 и Sony Playstation. Ответом Sega стал
+                                Saturn,
+                                который вышел на японский рынок в ноябре 1994 года и в Северную Америку в мае 1995 года.
+                            </p>
+                            <p class="section-paraghraph">
+                                Sega Saturn была первой консолью компании, на которой можно было запускать игры на
+                                CD-ROM
+                                сразу после выпуска. Такие игры, как Duke Nukem 3D, X-Men vs. Street Fighter и Resident
+                                Evil, нашли свое место на Saturn, но в конечном итоге она потерпела коммерческий провал.
+                            </p>
+                        </div>
+                        <div class="section-image-wrapper">
+                            <img loading="lazy" class="section-image" src="assets/img/Saturn/SaturnMk2.png"
+                                alt="Sega Saturn Mk2">
+                            Sega Saturn Mk2
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article>
+                <h2 class="article-header">
+                    Sega Dreamcast
+                </h2>
+                <section class="article-section">
+                    <h3 class="section-header">
+                        Выпуск
+                    </h3>
+                    <div class="article-section-block">
+                        <div>
+                            <p class="section-paraghraph">
+                                Sega Dreamcast стала последним детищем компании, как разработчика консолей, и это одна из
+                                систем, которая действительно попала в цель. Дебютировав в Японии в ноябре 1998 года и в
+                                Северной Америке в сентябре 1999 года, Sega Dreamcast извлекла выгоду из разрыва между
+                                выпусками своих конкурентов. Playstation и Nintendo 64 приближались к концу своего
+                                жизненного цикла, и Dreamcast вышла на рынок с 18 уникальными названиями запуска.
+                            </p>
+                            <p class="section-paraghraph">
+                                Такие игры Dreamcast, как Sonic Adventure 2, Soul Calibur, Crazy Taxi 2 и Skies of
+                                Arcadia, стали хитами, что привело к успешному выпуску. Поскольку новые консоли Nintendo
+                                и Sony, а также Xbox от Microsoft должны были вскоре выйти, Dreamcast стала последней
+                                консолью в историческом забеге Sega.
+                            </p>
+                        </div>
+                        <div class="section-image-wrapper">
+                            <img loading="lazy" class="section-image" src="assets/img/Dreamcast/Dreamcast.png"
+                                alt="Sega Dreamcast">
+                            Sega Dreamcast
                         </div>
                     </div>
                 </section>
             </article>
         </div>
     </main>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

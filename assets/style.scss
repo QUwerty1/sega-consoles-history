@@ -36,7 +36,7 @@ h3 {
     margin: 0 var(--margin-size) 0 var(--margin-size);
 
     @media (width >= 1350px) {
-        --container-size: 1200px
+        --container-size: 1200px;
     }
 }
 
@@ -75,28 +75,102 @@ h3 {
 .article-section-block {
     display: grid;
     grid-template-columns: 3fr 2fr;
+    gap: 10px;
+    max-width: var(--container-size);
     // align-items: center;
-
-    .section-image-wrapper {
-        color: #0063a6;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 10px;
-
-        .section-image {
-            width: 100%;
-        }
-    }
-
-    .section-paraghraph {
-        margin-top: 0;
-        text-align: justify;
-        display: block;
-    }
 }
+
 @media (width <= 750px) {
     .article-section-block {
         grid-template-columns: 1fr;
+    }
+}
+
+.section-image-wrapper {
+    color: #0063a6;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .section-image {
+        max-width: 100%;
+        width: auto;
+        max-height: 300px;
+    }
+}
+
+.section-paraghraph {
+    margin-top: 0;
+    text-align: justify;
+    display: block;
+}
+
+.images-container {
+    display: flex;
+    align-items: center;
+
+    .img-btn {
+        border: none;
+        height: 40px;
+        width: 40px;
+        mask-repeat: no-repeat;
+        mask-size: cover;
+        background-color: #0063a6;
+    }
+    .goBackBtn {
+        mask-image: url(img/arrows/caret-left-fill.svg);
+    }
+
+    .goNextBtn {
+        mask-image: url(img/arrows/caret-right-fill.svg);
+    }
+
+    .images {
+        --images-size: 400px;
+        height: auto;
+        width: var(--images-size);
+        max-width: var(--container-size);
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+
+        .img-wrapper {
+            width: var(--images-size);
+            height: auto;
+            display: flex;
+            flex-direction: column;
+
+            .img-desc {
+                margin: 10px 0 10px 0;
+                color: #0063a6;
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .img {
+                border-radius: 10px;
+                max-width: var(--container-size);
+                max-height: fit-content;
+                height: auto;
+                width: var(--images-size);
+                scroll-snap-align: start;
+            }
+        }
+    }
+    @media (width <= 750px) {
+        .images {
+            overflow-x: scroll;
+        }
+        .img-btn {
+            display: none;
+        }
     }
 }
