@@ -80,7 +80,7 @@ h3 {
     // align-items: center;
 }
 
-@media (width <= 750px) {
+@media (width <= 950px) {
     .article-section-block {
         grid-template-columns: 1fr;
     }
@@ -165,7 +165,7 @@ h3 {
             }
         }
     }
-    @media (width <= 750px) {
+    @media (width <= 650px) {
         .images {
             overflow-x: scroll;
         }
@@ -173,4 +173,29 @@ h3 {
             display: none;
         }
     }
+}
+
+.contents {
+    li::marker {
+        color: #0063a6;
+    }
+
+    .contents-item {
+        text-decoration: none;
+        color: #0063a6;
+        font-size: 1.3rem;
+        transition-duration: 100ms;
+        border-bottom: 2px solid white;
+        line-height: 2rem;
+
+        &:hover {
+            border-bottom: 2px solid #0063a6;
+        }
+    }
+}
+.footer {
+    padding-top: 10px;
+    border-top: 3px solid #0063a6;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
