@@ -12,7 +12,7 @@ body {
   margin: 0px;
 }
 
-h1 {
+h1, h3 {
   color: #0063a6;
 }
 
@@ -65,27 +65,30 @@ h1 {
   font-weight: bold;
 }
 
-.article .article-section {
+.article .section-header {
+  margin-bottom: 5px;
+}
+.article .article-section-block {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  align-items: center;
 }
-.article .article-section .section-image {
+.article .article-section-block .section-image {
   color: #0063a6;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
 }
-.article .article-section .section-image img {
+.article .article-section-block .section-image img {
   width: 100%;
 }
-.article .article-section .section-paraghraph {
+.article .article-section-block .section-paraghraph {
+  margin-top: 0;
   text-align: justify;
   display: block;
 }
 @media (width <= 750px) {
-  .article .article-section {
+  .article .article-section-block {
     grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=style.css.map */

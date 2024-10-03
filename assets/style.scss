@@ -10,7 +10,7 @@ body {
     margin: 0px;
 }
 
-h1 {
+h1,h3 {
     color: #0063a6;
 }
 
@@ -64,10 +64,13 @@ h1 {
 }
 
 .article {
-    .article-section {
+    .section-header {
+        margin-bottom: 5px;
+    }
+    .article-section-block {
         display: grid;
         grid-template-columns: 3fr 2fr;
-        align-items: center;
+        // align-items: center;
 
         .section-image {
             color: #0063a6;
@@ -82,12 +85,13 @@ h1 {
         }
 
         .section-paraghraph {
+            margin-top: 0;
             text-align: justify;
             display: block;
         }
     }
     @media (width <= 750px) {
-        .article-section {
+        .article-section-block {
             grid-template-columns: 1fr;
         }
     }
